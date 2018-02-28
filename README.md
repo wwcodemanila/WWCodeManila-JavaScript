@@ -1,3 +1,5 @@
+# Women Who Code Manila - JavaScript Study Group
+
 **JavaScript** was invented in 1995 to add dynamic components to websites, and it has been the backbone of the interactive web ever since. Nowadays, it can also be used for many other things, including:
 
   * [serving a website](https://nodejs.org/en/)
