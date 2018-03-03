@@ -1,6 +1,6 @@
 function displayForecast(forecast) {
-  var anchor = document.getElementById("forecast"),
-    html;
+  var anchor = document.getElementById("forecast");
+  var html;
 
   if (typeof forecast === "undefined") {
     html = "Unknown";
@@ -12,9 +12,9 @@ function displayForecast(forecast) {
 }
 
 function parseForecast() {
-  var location = "Taguig, Metro Manila",
-    json = JSON.parse(this.responseText),
-    data;
+  var location = "Taguig, Metro Manila";
+  var json = JSON.parse(this.responseText);
+  var data;
 
   for (var i = 0; i < json.length; i++) {
     if (json[i].location == location) {
@@ -28,7 +28,7 @@ function parseForecast() {
 
 function getForecast() {
   var request = new XMLHttpRequest();
-request.addEventListener("load", parseForecast);
+  request.addEventListener("load", parseForecast);
   request.open("GET", "https://us-central1-terminus-161218.cloudfunctions.net/noah/four_hour_forecast");
   request.send();
 }
