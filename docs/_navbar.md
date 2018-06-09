@@ -1,0 +1,2 @@
+* [Guide](/)
+* [Exercises](/exercises)
