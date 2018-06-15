@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+#landscape {
+  background-image: url('./landscape.png');
+  height: 803px;
+  width: calc(100% + 1606px);
+  background-repeat: repeat-x;
+  background-color: #708a2a;
+}
+
+#hot-air-balloon img {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 150px;
+  height: 150px;
+}
