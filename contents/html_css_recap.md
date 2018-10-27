@@ -26,6 +26,8 @@ If we want to define another class (say `main-paragraph`) for the element, we in
 
 If we want to add a different attribute, we just include a space after the first attribute and declare our next attribute like this: `<p class="awesome" id="cool-paragraph">This is cool!</p>`. Here, we declared two attributes `class` and `id` where `class` has a value of `awesome` and `id` has a value of `cool-paragraph`.
 
+It's important to know that the attribute **id** should be unique in a web page. If you've used the id `cool-paragraph` for one element, you can't declare another element with the same id. The attribute **class** on the other hand is reusable and doesn't have to be unique. You can declare several elements with the same class. This is particularly useful if you want several elements to have the same styles applied to them so they're easy to select later on using CSS.
+
 Other HTML elements follow the same basic syntax. For a comprehensive list of HTML elements to use, you can check out [htmlreference.io](https://htmlreference.io/) and [W3Schools HTML Element Reference](https://www.w3schools.com/tags/). For a list of HTML attributes, you can check out [MDN HTML Attribute Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) and [W3Schools HTML Attribute Reference](https://www.w3schools.com/tags/ref_attributes.asp).
 
 
