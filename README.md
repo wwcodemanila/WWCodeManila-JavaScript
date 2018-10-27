@@ -2,9 +2,7 @@
 
 ![JavaScript](./_media/logo-javascript.png)
 
-**JavaScript** is a cross-platform, object-oriented scripting language. (from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction)
-
-It was invented in 1995 to add dynamic components to websites, and it has been the backbone of the interactive web ever since. Nowadays, it can also be used for many other things, including:
+**JavaScript** is a [cross-platform, object-oriented scripting language](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction). It was invented in 1995 to add dynamic components to websites, and it has been the backbone of the interactive web ever since. Nowadays, it can also be used for many other things, including:
 
 - [serving a website](https://nodejs.org/en/)
 - writing [desktop](https://electronjs.org/) and [mobile](https://phonegap.com/) applications
@@ -19,13 +17,16 @@ We use Mozilla Foundation's [documentation](https://developer.mozilla.org/bm/doc
 
 !> Read this [document](wwcodemanila/study_groups.md) first to know what study groups are.
 
-JavaScript study groups are held on the first Saturday of every month. Everyone is welcome to join, learn, and share their knowledge in the community. Please RSVP at our [Meetup page](https://www.meetup.com/Women-Who-Code-Manila/). 
+JavaScript study groups are usually held on the first Saturday of every month. Everyone is welcome to join, learn, and share their knowledge in the community. Please RSVP at our [Meetup page](https://www.meetup.com/Women-Who-Code-Manila/). 
 
 Everyone joining this study group and other Women Who Code events must follow our [code of conduct](wwcodemanila/code_of_conduct.md).
 
 ## Prerequisites
 
-You just need to bring your own laptop with your preferred browser (Google Chrome, Safari, Microsoft Edge, Mozilla Firefox, etc.) and text editor. If you are new to programming and do not have a preferred text editor yet, we suggest [Atom](https://atom.io). Other text editors you can check out include [Sublime Text](https://www.sublimetext.com/) and [Visual Studio Code](https://code.visualstudio.com/).
+Please bring a laptop with the following software installed:
+
+- *Your favorite programming text editor.* If you are new to programming and do not have a favorite yet, we suggest [Atom](https://atom.io).
+- *Git.* For Windows, we recommend [TortoiseGit](https://tortoisegit.org/). For [Linux](https://git-scm.com/download/linux) and [OS X](https://www.atlassian.com/git/tutorials/install-git#mac-os-x), please follow the instructions in their respective links.
 
 ## Relevant links
 

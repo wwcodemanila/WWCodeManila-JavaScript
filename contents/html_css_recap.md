@@ -63,7 +63,3 @@ For a list of the CSS properties you can use in your declarations, you can refer
 To recap the refresher, HTML elements give structure to your content and are composed of **tags**. These elements can have **attributes** assigned to them. CSS lets you include presentation and design to your site by selecting HTML elements using **selectors** and declaring what properties or styles the elements should have using **declarations**.
 
 With that, you're now ready to dive into JavaScript!
-
-
-
-
