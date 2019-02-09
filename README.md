@@ -1,4 +1,4 @@
-# Women Who Code Manila JavaScript Group
+# Women Who Code Manila JavaScript Study Group
 
 ![JavaScript](./_media/logo-javascript.png)
 
