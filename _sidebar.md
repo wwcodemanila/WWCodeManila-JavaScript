@@ -12,7 +12,7 @@
     - [A Recap of HTML and CSS](contents/html_css_recap.md)
   - Introduction to JavaScript
     - [Language Features](contents/js_language_features.md)
-    - [Web Applications](contents/js_web_applications.md)
+    - [Examples From the Web](contents/js_examples_from_the_web.md)
 
 - Resources
   - [References](resources/references.md)
