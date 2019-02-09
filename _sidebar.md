@@ -1,10 +1,9 @@
-- Getting Started
-  - [About the Study Group](README.md)
-  - [Install Tools](getting_started/install_tools.md)
-
 - Women Who Code Manila
-  - [About WWCode Manila](wwcodemanila/about.md)
+  - [About Us](wwcodemanila/about.md)
   - [Study Groups](wwcodemanila/study_groups.md)
+
+- Introduction
+  - [JavaScript Study Group](README.md)
 
 - Basic Concepts
   - [How to Read This Guide](contents/starter_pack_guide.md)

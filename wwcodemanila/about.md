@@ -12,4 +12,4 @@ A world where women are representative as technical executives, founders, VCs, b
 
 ## Manila Chapter
 
-[Women Who Code Manila](http://manila.womenwhocode.com/) started on January 21, 2017. We have conducted a lot of events like study groups, hackathon, fireside chat, etc to achieve our mission of inspiring women in the tech industry.
+[Women Who Code Manila](http://manila.womenwhocode.com/) started on January 21, 2017. We have conducted a lot of events like study groups, hackathons, fireside chats, etc. to achieve our mission of inspiring women in the tech industry.
