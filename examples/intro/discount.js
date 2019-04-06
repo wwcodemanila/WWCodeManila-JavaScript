@@ -48,14 +48,17 @@ var customers = [customerA, customerB, customerC, customerD];
 // "Maria's discounted price is Php680.5 (0% discount)"
 // "Charm's discounted price is Php612.45 (10% discount)"
 
+document.getElementById('compute-button').onclick = function() {
+   	for (i = 0; i < customers.length; i++) {
+		result = customers[i].name + "'s discounted price is Php??? (?% discount)"
 
-for (i = 0; i < customers.length; i++) {
-	result = customers[i].name + "'s discounted price is Php??? (?% discount)"
-
-	var node = document.createElement("LI");                
-	var textnode = document.createTextNode(result);         
-	node.appendChild(textnode);   
-	
-	var results = document.getElementById("discounted-price");
-	results.appendChild(node);
+		var listElement = document.createElement("LI");                
+		var textNode = document.createTextNode(result);         
+		listElement.appendChild(textNode);   
+		
+		var results = document.getElementById("discounted-price");
+		results.appendChild(listElement);
+	}
 }
+
+
