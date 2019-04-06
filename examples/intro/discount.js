@@ -50,7 +50,7 @@ var customers = [customerA, customerB, customerC, customerD];
 
 
 for (i = 0; i < customers.length; i++) {
-	result = customers[i].name + "'s discounted price is Php???"
+	result = customers[i].name + "'s discounted price is Php??? (?% discount)"
 
 	var node = document.createElement("LI");                
 	var textnode = document.createTextNode(result);         
