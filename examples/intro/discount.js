@@ -49,6 +49,7 @@ var customers = [customerA, customerB, customerC, customerD];
 // "Charm's discounted price is Php612.45 (10% discount)"
 
 document.getElementById('compute-button').onclick = function() {
+	clearResult();
    	for (i = 0; i < customers.length; i++) {
 		result = customers[i].name + "'s discounted price is Php??? (?% discount)"
 
@@ -64,4 +65,10 @@ function displayResult(result) {
 	var results = document.getElementById("discounted-price");
 	results.appendChild(listElement);
 }
+
+function clearResult() {
+  var results = document.getElementById("discounted-price");
+  results.innerHTML = "";
+}
+
 
