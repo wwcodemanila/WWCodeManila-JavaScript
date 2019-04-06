@@ -1,0 +1,9 @@
+body {
+  margin: 50px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#discounted-price {
+  line-height: 1.5;
+}
