@@ -52,13 +52,16 @@ document.getElementById('compute-button').onclick = function() {
    	for (i = 0; i < customers.length; i++) {
 		result = customers[i].name + "'s discounted price is Php??? (?% discount)"
 
-		var listElement = document.createElement("LI");                
-		var textNode = document.createTextNode(result);         
-		listElement.appendChild(textNode);   
-		
-		var results = document.getElementById("discounted-price");
-		results.appendChild(listElement);
+		displayResult(result);
 	}
 }
 
+function displayResult(result) {
+	var listElement = document.createElement("LI");                
+	var textNode = document.createTextNode(result);         
+	listElement.appendChild(textNode);   
+	
+	var results = document.getElementById("discounted-price");
+	results.appendChild(listElement);
+}
 
