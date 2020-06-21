@@ -7,12 +7,7 @@
   - [Study Groups](wwcodemanila/study_groups.md)
 
 - Basic Concepts
-  - [How to Read This Guide](contents/starter_pack_guide.md)
-  - Web Fundamentals
-    - [HTML, CSS, JavaScript: How They Work Together](contents/html_css_js.md)
-    - [A Recap of HTML and CSS](contents/html_css_recap.md)
-  - JavaScript Fundamentals
-	- [Your First JS Code](contents/hello_world.md)
-
+  - [Web Fundamentals](contents/web_fundamentals.md)
+  - [JavaScript Basics](contents/javascript_basics.md)
 - Resources
   - [References](resources/references.md)
