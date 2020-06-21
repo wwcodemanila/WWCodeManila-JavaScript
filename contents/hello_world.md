@@ -2,7 +2,7 @@
 
 For this tutorial, we will walk you through on the fundamentals of JavaScript as a language. We'll focus on building on your knowledge of the core concepts of JavaScript.
 
-If you feel like you would rather go straight into building web applications, head on over to the [Web Applications](contents/js_web_applications.md) section to get started.
+<!-- If you feel like you would rather go straight into building web applications, head on over to the [Web Applications](contents/js_web_applications.md) section to get started. -->
 
 
 ## Hello, World!
