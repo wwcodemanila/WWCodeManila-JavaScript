@@ -25,7 +25,9 @@ This will open the Inspector where you can see details about the web page you're
 
 Then, write your JS code by entering the following line to the console:
 
-`console.log("Hello, World!");`
+```
+console.log("Hello, World!");
+```
 
 which should output something similar to what's shown below:
 
@@ -44,7 +46,9 @@ An alert is the pop up window that shows up on the top of your browser. The comm
 
 To try this out, enter the following in the console:
 
-`alert("Hello, World!);`
+```
+alert("Hello, World!);
+```
 
 ![](../_media/console-alert.png "Alert - Hello, World!")
 
@@ -52,11 +56,13 @@ To try this out, enter the following in the console:
 
 1. Try to see what happens when you change the text "Hello, World!".
 
-`console.log("I can print anything here!");`
+```
+console.log("I can print anything here!");
 
-`alert("This is a function call.");`
+alert("This is a function call.");
+```
 
-2. What about if you remove the quotation marks?
+2. What happens if you remove the quotation marks?
 
 3. Try printing numbers too! Did it work?
 
@@ -65,4 +71,3 @@ To try this out, enter the following in the console:
 You just learned two different ways of printing "Hello, World!". `console.log` will come in handy later when debugging while `alert` can be used to show warnings to users of your site.
 
 More importantly though, you made a function call which we'll be learning more about later on. For now, it's a good observation to note that whatever we passed inside the parenthesis will be used by the function.
-
