@@ -54,16 +54,19 @@ As mentioned earlier, all primitives are **immutable**, meaning their values can
 
 ### Undefined
 
-We start with the first primitive value in JavaScript, which is `undefined`. There exists **only one** undefined value in JavaScript. This data type represents an **unintentional missing value**.
+Let's start with Undefined, the first primitive value we'll learn in JavaScript. This data type represents an **unintentional missing value**. There exists **only one** value in JavaScript with this data type, and it's also called `undefined`. 
 
-It usually shows up if you forgot to assign a value to a variable and in other situations where JavaScript can't tell the value that you wanted. If this happens, that variable points to undefined.
+It usually shows up if you forgot to assign a value to a variable and in other situations where the code doesn't know what value that you wanted. If this happens, we say that our variable contains the value `undefined`.
+
+> So far, we've been imagining variables as *boxes* that *contain* values. Boxes are a common mental model of developers for variables. It's what we default to when we think of variables and when we try to describe variables to other people. However, I want to share a different perspective which I found from Dan Abramov's newsletter called [JustJavaScript](JustJavaScript.com) which I recommend that you check out once you're already familiar with the basics of JavaScript. In his mental model, he thinks of variables as *"wires"* that *point to* values. That's all that I'll say about it for now!
+
 
 ```
 let x;
 console.log(x);
 ```
 
-In the example above, we declared a variable called `x` and did not assign it any value. Hence, it outputs **undefined**. So far, we've been assigning the value undefined in the previous section when we learned about variables.
+In the example above, we declared a variable called `x` and did not assign any value to it. Hence, it outputs **undefined**. So far, we've been unintentionally assigning the value `undefined` when we learned about variables in the previous section.
 
 Don't be confused with its name `undefined`. It's **not** supposed to represent something that hasn't been defined yet. In fact, if you try to run `console.log` on a variable that hasn't been declared, it will show an error. Try out the example below where we did not declare the variable `y` in our code.
 
@@ -73,3 +76,59 @@ console.log(y);
 
 You should get an error that says `Uncaught ReferenceError: y is not defined`. Undefined is not the same as not defined!
 
+Finally, as we explore the different data types, we'll be making use of a new function called `typeof`.
+
+> `typeof` is a function in JavaScript that returns the data type of whatever is passed in between its parenthesis.
+
+To test it out with our first primitive, copy and paste the code below to your console and check the output.
+
+```
+let x;
+console.log(typeof(x));
+```
+
+### Null
+
+Null is the **special case** for primitives that we talked about earlier. Like `undefined`, there is also only **one value** in JavaScript with this data type. Same as the case for undefined, the only value for the null data type is also called `null`!
+
+If undefined was used for unintentional missing values, null on the other hand is used for **intentional missing values**. Developers usually assign their variables the value `null` in cases where they might want to declare the variable, but assign its actual value later on.
+
+An example is shown below where some dev might have declared a variable `x`, and intends to assign it the value 15 after some block of code is executed.
+
+```
+let x = null;
+...
+<other code>
+...
+x = 15;
+console.log(x);
+```
+
+Arguably, the first line from our example could have also been just `let x;`. If we did this, `x` would have had the value `undefined` at first, but also lead to the same result of logging the value `15` at the end.
+
+```
+let x;
+...
+<other code>
+...
+x = 15;
+console.log(x);
+```
+
+However, it's a convention for some developers to set it the value to `null` instead just to help us differentiate a mistake in our code from an intentional missing value. It might be a good idea to follow this practice, or to just avoid using both and declare a variable only when you plan on assigning it an actual value.
+
+```
+...
+<other code>
+...
+let x = 15;
+console.log(x);
+```
+
+We mentioned that `null` is a special case. What makes null so special?
+
+```
+console.log(typeof(null));
+```
+
+What does the code above tell us about the `type` of `null`? Recall that `typeof` is used to tell us what the data type is of the value passed to it. If you're interested to read more about this "bug", check out [The history of "typeof null"](https://2ality.com/2013/10/typeof-null.html).
