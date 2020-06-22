@@ -35,7 +35,7 @@ Also, multi-word variable names are usually written in `camelCase` where the nex
 
 > When declaring variable names, we usually try to be as descriptive as possible to make our code readable.
 
-### Exercise 1
+#### Exercises
 
 Test out different variable names to check whether they are valid variable names or not.
 
@@ -60,32 +60,42 @@ It usually shows up if you forgot to assign a value to a variable and in other s
 
 > So far, we've been imagining variables as *boxes* that *contain* values. Boxes are a common mental model of developers for variables. It's what we default to when we think of variables and when we try to describe variables to other people. However, I want to share a different perspective which I found from Dan Abramov's newsletter called [JustJavaScript](JustJavaScript.com) which I recommend that you check out once you're already familiar with the basics of JavaScript. In his mental model, he thinks of variables as *"wires"* that *point to* values. That's all that I'll say about it for now!
 
+#### Exercises
+
+1. Declare a variable called `x`.
+2. Log the value of `x` to the console.
 
 ```
 let x;
 console.log(x);
 ```
 
-In the example above, we declared a variable called `x` and did not assign any value to it. Hence, it outputs **undefined**. So far, we've been unintentionally assigning the value `undefined` when we learned about variables in the previous section.
+In the exercise you did, we declared a variable called `x` and did not assign any value to it. Hence, it outputs **undefined**. So far, we've been unintentionally assigning the value `undefined` when we learned about variables in the previous section.
 
 Don't be confused with its name `undefined`. It's **not** supposed to represent something that hasn't been defined yet. In fact, if you try to run `console.log` on a variable that hasn't been declared, it will show an error. Try out the example below where we did not declare the variable `y` in our code.
+
+
+#### Exercise
+
+1. Log the value of an undeclared variable `y` to the console. What was the result of logging to the console?
 
 ```
 console.log(y);
 ```
 
-You should get an error that says `Uncaught ReferenceError: y is not defined`. Undefined is not the same as not defined!
+If you got an error while trying to do the exercise above with the message `Uncaught ReferenceError: y is not defined`, then this is telling us that **undefined is not the same as not defined!**
 
 Finally, as we explore the different data types, we'll be making use of a new function called `typeof`.
 
-> `typeof` is a function in JavaScript that returns the data type of whatever is passed in between its parenthesis.
+> `typeof` is a function in JavaScript that returns the data type of whatever is passed in between its parenthesis. Note that the value returned by `typeof` is a string. Don't worry if you're not yet sure what a string is, we'll be taking this on in a a bit.
 
-To test it out with our first primitive, copy and paste the code below to your console and check the output.
+#### Exercises
 
-```
-let x;
-console.log(typeof(x));
-```
+1. Declare a variable called `z`.
+2. Log the value of `z` to the console.
+3. Log the type of `z` to the console. (Hint: use the `typeof` operator to retrieve the data type of variable `z`)
+
+For this exercise, note that the **value** of `z` is `undefined`, but the **type** of `z` is a string containing the word "undefined".
 
 ### Null
 
@@ -125,10 +135,61 @@ let x = 15;
 console.log(x);
 ```
 
-We mentioned that `null` is a special case. What makes null so special?
+We mentioned that `null` is a special case. What makes null so special? Try out the exercises below to see it yourself!
+
+### Exercises
+
+1. Declare a new variable called `age` and set its value to `null`.
+2. Log to the console the value of `age`.
+3. Log to the console the type of `age`. Was that the output you expected?
+
+What did the exercise above tell us about the `type` of `null`? Recall that `typeof` is used to tell us what the data type is of the value passed to it.
 
 ```
 console.log(typeof(null));
 ```
 
-What does the code above tell us about the `type` of `null`? Recall that `typeof` is used to tell us what the data type is of the value passed to it. If you're interested to read more about this "bug", check out [The history of "typeof null"](https://2ality.com/2013/10/typeof-null.html).
+In case you're confused about this, `null` is still considered a `primitive value`. It's just pretending to be an `object`. This is actually the result of an irreversible bug from the past!
+
+If you're interested to read more about this bug and why it can't be fixed, check out [The history of "typeof null"](https://2ality.com/2013/10/typeof-null.html).
+
+
+### Booleans
+
+The next primitive we'll take on are booleans. Booleans represent a logical entity in our code. They take on **two values** unlike Undefined and Null which both have one value each.
+
+The two boolean values are `true` and `false`.
+
+```
+console.log(typeof(false));
+
+let isLearning = true;
+console.log(typeof(isLearning));
+```
+
+We usually use **logical operators** on boolean values. What are logical operators? If you've taken a philosophy class before, you might be familiar with the terms "not", "and", and "or". Feel free to skip this if you already know what logical operators are.
+
+If you'd like to skip ahead to the next primitive value and learn about logical operators later on, that's also okay (you can always come back later)! [Click here to jump on ahead to Numbers.](contents/data_types_operators.md?id=numbers)
+
+#### Logical Operators
+
+We'll discuss the three logical operators in JavaScript, which are detailed in the table below. These are the not (`!`), and (`&&`), and or (`||`) operators.
+
+![](../_media/logical-operators.png "Logical Operators")
+
+To better understand how these operators work, let's dive in to some exercises instead.
+
+#### Exercises
+
+1. Declare a variable called `isRed` and set its value to `true`.
+2. Log to the console the result of `!isRed`. `!` is the not operator.
+3. Log to the console the result of `!!isRed`. Negating a negation just brings back the original value!
+4. Declare a variable called `isRound` and set its value to `false`.
+5. Log to the console the result of `isRed && isRound`. Here we're trying to check if something is both red AND round.
+6. Log to the console the result of `isRed || isRound`. In this example, we're trying to see if something is either color red or is round in shape (or both!).
+7. Change the value of `isRound` to `true` and try doing exercises 5 & 6 again. What changed in the output? Does it make sense with the description of the logical operators?
+8. Try logging to the console the result of `true && true && true`. This shows us we can keep extending the `expression`. You can even try out `false || false || false || false` and keep going on and on...
+9. Finally, try combining all three and use parentheses `()` to group statements together if it gets too complicated. `!true && (false || true) && !false`
+
+
+
