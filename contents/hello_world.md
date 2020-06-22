@@ -2,9 +2,6 @@
 
 For this tutorial, we will walk you through on the fundamentals of JavaScript as a language. We'll focus on building on your knowledge of the core concepts of JavaScript.
 
-<!-- If you feel like you would rather go straight into building web applications, head on over to the [Web Applications](contents/js_web_applications.md) section to get started. -->
-
-
 ## Hello, World!
 
 We begin learning JavaScript with the best-selling introduction to programming: **"Hello, World!"**. This is usually the first ever exercise when learning a new programming language. This exercise simply lets you output the words "Hello, World!" in the language you're learning.
