@@ -103,26 +103,26 @@ Null is the **special case** for primitives that we talked about earlier. Like `
 
 If undefined was used for unintentional missing values, null on the other hand is used for **intentional missing values**. Developers usually assign their variables the value `null` in cases where they might want to declare the variable, but assign its actual value later on.
 
-An example is shown below where some dev might have declared a variable `x`, and intends to assign it the value 15 after some block of code is executed.
+An example is shown below where some dev might have declared a variable `age`, and intends to assign it the value 15 after some block of code is executed (probably since age is still unknown at the beginning of the program).
 
 ```
-let x = null;
+let age = null;
 ...
 <other code>
 ...
-x = 15;
-console.log(x);
+age = 15;
+console.log(age);
 ```
 
-Arguably, the first line from our example could have also been just `let x;`. If we did this, `x` would have had the value `undefined` at first, but also lead to the same result of logging the value `15` at the end.
+Arguably, the first line from our example could have also been just `let age;`. If we did this, `age` would have had the value `undefined` at first, but also lead to the same result of logging the value `15` at the end.
 
 ```
-let x;
+let age;
 ...
 <other code>
 ...
-x = 15;
-console.log(x);
+age = 15;
+console.log(age);
 ```
 
 However, it's a convention for some developers to set it the value to `null` instead just to help us differentiate a mistake in our code from an intentional missing value. It might be a good idea to follow this practice, or to just avoid using both and declare a variable only when you plan on assigning it an actual value.
@@ -131,13 +131,13 @@ However, it's a convention for some developers to set it the value to `null` ins
 ...
 <other code>
 ...
-let x = 15;
-console.log(x);
+let age = 15;
+console.log(age);
 ```
 
 We mentioned that `null` is a special case. What makes null so special? Try out the exercises below to see it yourself!
 
-### Exercises
+#### Exercises
 
 1. Declare a new variable called `age` and set its value to `null`.
 2. Log to the console the value of `age`.
@@ -190,6 +190,162 @@ To better understand how these operators work, let's dive in to some exercises i
 7. Change the value of `isRound` to `true` and try doing exercises 5 & 6 again. What changed in the output? Does it make sense with the description of the logical operators?
 8. Try logging to the console the result of `true && true && true`. This shows us we can keep extending the `expression`. You can even try out `false || false || false || false` and keep going on and on...
 9. Finally, try combining all three and use parentheses `()` to group statements together if it gets too complicated. `!true && (false || true) && !false`
+
+### Numbers
+
+Numbers are the fourth kind of primitive values that we'll look into. Both integers and floating point numbers (numbers with decimal places) are represented as a **number** in JavaScript. This means that numbers can be written with or without decimals, and they will still be classified as a number.
+
+We'll look into the power of numbers through doing more exercises.
+
+#### Exercises
+
+1. Declare a variable `x` with a value set to `3` and log its value to the console.
+2. Declare another variable `y` with a value set to `3.00` and log its value to the console. What happened to the decimal places? Is it similar with the value of `x`?
+3. Just to verify if `x` and `y` are really numbers, log to the console the result of `typeof(x)` and `typeof(y)`.
+4. Let's try printing large numbers. The number of minutes in a common year is 525,600 minutes. Log the value `525600` to the console.
+5. Large numbers can be hard to read especially when they reach more than a thousand. Try doing exercise 4 but use an underscore `_` between the digits 5 and 6. Did the printed output include the underscore `_` you added?
+
+**Scientific exponential notation** is also possible in JavaScript by using `e` (or capital `E`!) for the exponent followed by a positive or negative sign. By default, it no sign was passed, the exponent will be positive.
+
+```
+console.log(15E+13);
+console.log(15E-13);
+console.log(15E13);
+
+console.log(15e+2);
+console.log(15e-2);
+console.log(15e4);
+```
+
+Let's try even bigger numbers. Note that numbers have **limited precision** in JavaScript. At some point, if the number gets big enough or small enough, we start losing precision. This is because JavaScript represents the numbers we have in our code by *picking the closest numbers that it knows about*. Instead of doing real math that we're used to, numbers in JavaScript have a limited precision of 64 bits to be exact, which is approximately 16 digits. Try out the code below to explore the limitations of numbers.
+
+```
+console.log(999_999_999_999_999);
+console.log(9_999_999_999_999_999);
+
+
+console.log(0.1 + 0.2);
+```
+
+Because of this, we just need to be a bit more careful when dealing with large numbers and calculations. This is not unique in JavaScript. If you'd like to explore this in more detail, feel free to read [What Every Programmer Should Know About Floating-Point Arithmetic](https://floating-point-gui.de/).
+
+To add to the discussion, you can also use `Number.isSafeInteger()` and pass in your integer to check if it's within the safe range. If it returns false, it means that JavaScript will treat it as an **approximation** of the value (closest number it knows about). You can also check `Number.MAX_SAFE_INTEGER` and `Number.MIN_SAFE_INTEGER`. 
+
+
+```
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MIN_SAFE_INTEGER);
+
+console.log(Number.isSafeInteger(Number.MAX_SAFE_INTEGER));
+console.log(Number.isSafeInteger(Number.MAX_SAFE_INTEGER + 1));
+
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MAX_SAFE_INTEGER + 1);
+console.log(Number.MAX_SAFE_INTEGER + 2);
+console.log(Number.MAX_SAFE_INTEGER + 3);
+console.log(Number.MAX_SAFE_INTEGER + 4);
+console.log(Number.MAX_SAFE_INTEGER + 5);
+
+```
+
+You might have noticed that we started to lose precision while adding to `Number.MAX_SAFE_INTEGER` and some numbers stayed more than just `1` step apart. Don't worry about this as you probably won't be dealing with these unless you're coding finance-related applications with heavy computations and really, really large values.
+
+Since you've had a peak at an addition operation with the previous code examples, we'll learn about the different arithmetic operators in JavaScript. Or if you'd like, feel free to [jump on to the 3 symbolic number values](contents/data_types_operators.md?id=symbolic_numbers) and come back to this later instead.
+
+#### Arithmetic Operators
+
+You can probably guess what the rest of the possible arithmetic operators are aside from addition. Shown below is a summary of the basic arithmetic operators we know from studying math (and a few more we might not have seen before).
+
+![](../_media/arithmetic-operators.png "Arithmetic Operators")
+
+#### Exercises
+
+1. Log to the console the result of adding 3 and 5.
+2. Subtract 80 from 100 and then log the result to the console. Try it out the other way around, subtracting 100 from 80.
+3. Run `console.log(50 * 48);`.
+4. Run `console.log(100 / 5);`. Also run `console.log(5 / 100);`. How about `console.log(100 / 3);`?
+5. Using `**` raises the number on the left to the power of the number on the right. `console.log(5 ** 2);` should result to 25.
+6. Try out the following:
+```
+let x = 9;
+x = x + 1;
+console.log(x);
+x += 3;
+console.log(x);
+```
+This shows us one of the shortcuts for addition using the same variable. The same can also be done for `-=`, `*=`, and `/=`.
+8. Incrementing and decrementing are even shorter shortcuts `x += 1;` or `x -= 1;` (specifically used only when incrementing by 1). Try it out with logging the result of `x--;` and `x++;`.
+9. Finally, you can also declare the precedence of operators by using parentheses. `(5 + 3) / 2` can be done to perform addition first before division.
+
+#### Symbolic Numbers
+
+Aside from the usual integers and floating points, there are three symbolic numbers: `Infinity`, `-Infinity`, and `NaN`. We don't commonly write code using these special numbers but it's valuable to understand these in case they come up from a bugs.
+
+Just to confirm if they're really numbers, try logging the result of `typeof` for all three symbolic numbers.
+```
+console.log(typeof(Infinity));
+console.log(typeof(-Infinity));
+console.log(typeof(NaN));
+```
+
+The values `Infinity` and `-Infinity` are produced for two reasons. The first is if your number is greater than the largest possible number available in JavaScript (or if it's less than the smallest possible number available).
+
+You can get the largest and smallest value available by using the constants `Number.MAX_VALUE` and `Number.MIN_VALUE`.
+
+```
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+
+console.log(Number.MAX_VALUE * 2);
+```
+
+Another scenario where you can get a value of `Infinity` and `-Infinity` is when you perform a division by 0.
+
+```
+console.log(9 / 0);
+console.log(-9 / 0);
+```
+
+`NaN` means **N**ot **a** **N**umber. This value shows up in the case where you have a numeric value that represents a non-number. Don't be confused with its name, it's still a numeric value but is called that way because it's treated as an "invalid number". There are 5 known ways of how to produce a `NaN` value as described by [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN).
+
+1.  Perfoming any operation (except for addition) on a string
+
+```
+console.log(9 * "sample string"); 
+console.log(9 / "sample string"); 
+console.log(9 - "sample string"); 
+```
+
+2. Trying to parse a non-number to a number
+
+```
+console.log(parseInt("cannot be a number"));
+console.log(Number("hello")); 
+```
+
+3. Any operation directly using `NaN`
+
+```
+console.log(NaN * 5);
+```
+
+4. Indeterminate form
+
+```
+console.log(0 * Infinity);
+```
+
+5. Any Math operation where the result is not a real number
+
+```
+console.log(Math.sqrt(-1));
+console.log(0/0);
+```
+
+> Note that you shouldn't always use numbers just because you're trying to represent data that is numeric. For example, when storing phone numbers, credit card numbers, and ID numbers, it might be better to just use strings!
+
+
+
 
 
 
