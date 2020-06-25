@@ -22,7 +22,7 @@ One common way to think about variables would be perhaps a box that you own and 
 
 ![](../_media/variable.png "Variable Declaration")
 
-Notice as well that there's a semicolon at the end of our variable declaration. We usually place semicolons (;) at the end of every line in JavaScript (except for code blocks).
+> Notice that there's a semicolon at the end of our variable declaration. We usually place semicolons (;) at the end of every line in JavaScript (except for code blocks). Although this isn't required and some developers choose to omit it from their code since JavaScript "assumes" where to place it if it's missing, we'll be consistently using semicolons for our examples.
 
 ### Variable Names
 
@@ -229,7 +229,7 @@ console.log(0.1 + 0.2);
 
 Because of this, we just need to be a bit more careful when dealing with large numbers and calculations. This is not unique in JavaScript. If you'd like to explore this in more detail, feel free to read [What Every Programmer Should Know About Floating-Point Arithmetic](https://floating-point-gui.de/).
 
-To add to the discussion, you can also use `Number.isSafeInteger()` and pass in your integer to check if it's within the safe range. If it returns false, it means that JavaScript will treat it as an **approximation** of the value (closest number it knows about). You can also check `Number.MAX_SAFE_INTEGER` and `Number.MIN_SAFE_INTEGER`. 
+To add to the discussion, you can also use `Number.isSafeInteger()` and pass in your integer to check if it's within the safe range. If it returns false, it means that JavaScript will treat it as an **approximation** of the value (closest number it knows about). You can also check `Number.MAX_SAFE_INTEGER` and `Number.MIN_SAFE_INTEGER`.
 
 
 ```
@@ -311,16 +311,16 @@ console.log(-9 / 0);
 1.  Perfoming any operation (except for addition) on a string
 
 ```
-console.log(9 * "sample string"); 
-console.log(9 / "sample string"); 
-console.log(9 - "sample string"); 
+console.log(9 * "sample string");
+console.log(9 / "sample string");
+console.log(9 - "sample string");
 ```
 
 2. Trying to parse a non-number to a number
 
 ```
 console.log(parseInt("cannot be a number"));
-console.log(Number("hello")); 
+console.log(Number("hello"));
 ```
 
 3. Any operation directly using `NaN`
