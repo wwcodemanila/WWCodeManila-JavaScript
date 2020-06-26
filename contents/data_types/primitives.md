@@ -2,7 +2,7 @@
 
 Now that you know more about declaring variables, let's go back to the data types to know what values we can place on the right side of the equals (`=`) operator.
 
-There are **6 primitive values** in JavaScript, with one additional **special case**. In a way, you can say there is a total of 7 primitive values.
+There are **6 primitive values** in JavaScript, with one additional **special case**. In a way, you can say there is a total of **7 primitive values**.
 
 As mentioned earlier, all primitives are **immutable**, meaning their values cannot be changed in the same way that objects and functions can. This may sound a bit confusing for now, so we'll revisit this as we get into the specific date types. For now though, let's just keep in mind that primitives **cannot be directly altered**, but they can be **replaced**.
 
@@ -279,7 +279,50 @@ It might be a rare case for you to use BigInts unless you're developing applicat
 
 ## Strings
 
+**Strings** are another primitive value in JavaScript. They are a sequence of characters (letters, numbers, symbols) used to represent textual data and are usually surrounded by single quotation marks (`''`) or double quotation marks (`""`).
 
+A sample string declaration of a string would be:
+
+```
+let name = "Women Who Code Manila";
+let language = 'JavaScript';
+```
+
+Although in the example above, we demonstrated the two ways of declaring strings, in practice we try to be consistent in our code. If we chose to use single quotes once, try to use single quotes all throughout your code. Likewise, if you chose to use double quotes for your strings, use it consistently across your entire codebase.
+
+> If you've tried out ["Hello World" Your First JS Code](contents/basics/hello_world.md) before then you've actually already tried using strings already.
+
+Note that since strings are primitive, once you create a string you cannot modify them. Let's try to go through this by way of exercises.
+
+### Exercises
+
+1. Declare a string called `filename` and set its value to `"sample.txt"`.
+2. Log to the console the value of `filename`.
+3. Log to the console the result of `typeof(filename)`.
+4. Change the value of `filename` to `"new.txt"` and log its new value to the console by running `console.log(filename);`.
+
+For the exercise done above, why was it that we were able to change the value of `filename` when it was said that primitive values cannot be modified. Didn't we just see that the string (which is a primitive) was changed from `"sample.txt"` to `"new.txt"`?
+
+Actually, behind the scenes, no. What we did in the exercise was change the value of `filename`. We replaced the variable's value, but the original string itself (`"sample.txt"`) remained the same.
+
+![](../../_media/string-replacement.png "String Example")
+
+You can think of it as the original string `"sample.txt"` was **removed** or taken out of from the "box" or variable, and then **replaced** by a new (and completely different) string with the value `"new.txt"`. So the original string is still out there somewhere, unmodified, while the new string has taken its place.
+
+There are a lot of operations that we can use on strings, which can be found in its documentation. A useful example would be **string concatenation** which makes use of the `+` sign to combine two or more strings together.
+
+```
+let name = "Barbara";
+console.log("Hey, " + name + "! How are you today?");
+```
+
+In modern syntax, we can also make use of template literals which shortens the example above to just:
+
+```
+console.log(`Hey, ${name}! How are you today?`);
+```
+
+Another way of achieving the same result is by using `String.concat()`. There really is a whole lot more already-built functions that we can take advantage of when dealing with this data type. Check out the documentation under "Instance methods" over at [MDN Web Docs on Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String). This doesn't only apply to strings but the other data types we've also discussed have their own documentation page as well that you can always refer to for readily-made methods that you can use.
 
 ## Symbols
 

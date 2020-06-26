@@ -1,10 +1,14 @@
-## Arithmetic Operators
+## Overview
 
-You can probably guess what the rest of the possible arithmetic operators are aside from addition. Shown below is a summary of the basic arithmetic operators we know from studying math (and a few more we might not have seen before).
+In this section, we'll visit the different Arithmetic Operators that you can use. These are commonly applicable for [Numbers](contents/data_types/primitives?id=numbers) and [BigInts](contents/data_types/primitives?id=bigints), but there are some operators that you can even apply to [Strings](contents/data_types/primitives?id=strings)!
 
-![](../_media/arithmetic-operators.png "Arithmetic Operators")
+If you came from learning the `Numbers` data type, you're probably already familiar with how addition works. You can probably also guess what the rest of the possible arithmetic operators are aside from addition.
 
-### Exercises
+Shown below is a summary of the basic arithmetic operators we know from studying math (and a few more we might not have seen before).
+
+![](../../_media/arithmetic-operators.png "Arithmetic Operators")
+
+## Exercises
 
 1. Log to the console the result of adding 3 and 5.
 2. Subtract 80 from 100 and then log the result to the console. Try it out the other way around, subtracting 100 from 80.

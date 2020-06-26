@@ -16,7 +16,7 @@ HTML elements can have **attributes** declared on the opening tag. Attributes he
 
 The typical HTML syntax is shown below: 
 
-![](../_media/html-syntax.png "HTML Syntax")
+![](../../_media/html-syntax.png "HTML Syntax")
 
 In this example, we are defining that the content "This is cool!" is a **paragraph** by enclosing it in the **p** tag. The entire `<p class="awesome">This is cool!</p>` is an **element** composed of **p opening and closing tags** with the text "This is cool!". 
 
@@ -36,7 +36,7 @@ On top of HTML we can add CSS or Cascading Style Sheets. CSS is a *style languag
 
 When writing code using CSS, we make use of **selectors** and **declarations**. Shown below is a basic CSS example using the selectors and declarations:
 
-![](../_media/css-syntax.png "CSS Syntax")
+![](../../_media/css-syntax.png "CSS Syntax")
 
 **Selectors** "select" the HTML element (or elements) that we want to apply the styles to while declarations tell us the actual styles to apply to the element selected. 
 
@@ -54,7 +54,7 @@ In our example above, we are selecting all the paragraph elements in a web page 
 
 When writing code in CSS, it's usually helpful to use line-breaks and indentations for each declaration. This would greatly improve code readability even though it won't change what is rendered on the page. To improve on our example earlier, we can format it to be written as:
 
-![](../_media/css-clean-code.png "CSS Formatted")
+![](../../_media/css-clean-code.png "CSS Formatted")
 
 For a list of the CSS properties you can use in your declarations, you can refer to [cssreference.io](https://cssreference.io/) and [W3Schools CSS Reference](https://www.w3schools.com/cssref/). To check more advanced selectors, you can visit [W3Schools CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp) and [HTML Dog CSS Selectors](http://htmldog.com/references/css/selectors/).
 

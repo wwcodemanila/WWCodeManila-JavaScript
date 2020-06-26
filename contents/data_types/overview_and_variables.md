@@ -20,7 +20,7 @@ A variable, like in Math, is used to represent something in our code. What is "s
 
 One common way to think about variables would be perhaps a box that you own and put values in. The usual way of declaring variables is using `let` followed by the name you want to call your variable. If you would like to assign a value to a variable, you use the `=` equals sign followed by the value you want to save to the variable you just declared.
 
-![](../_media/variable.png "Variable Declaration")
+![](../../_media/variable.png "Variable Declaration")
 
 > Notice that there's a semicolon at the end of our variable declaration. We usually place semicolons (;) at the end of every line in JavaScript (except for code blocks). Although this isn't required and some developers choose to omit it from their code since JavaScript "assumes" where to place it if it's missing, we'll be consistently using semicolons for our examples.
 

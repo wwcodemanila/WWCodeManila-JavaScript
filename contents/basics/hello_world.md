@@ -14,11 +14,11 @@ Begin by opening your preferred web browser. In the screenshot guides, we used G
 
 Right click on anywhere in your web browser and select the option to "Inspect" or "Inspect Element".
 
-![](../_media/browser-inspect-element.png "Google Chrome - Inspect")
+![](../../_media/browser-inspect-element.png "Google Chrome - Inspect")
 
 This will open the Inspector where you can see details about the web page you're currently viewing. Open the tab "Console".
 
-![](../_media/browser-console.png "Google Chrome - Console")
+![](../../_media/browser-console.png "Google Chrome - Console")
 
 Then, write your JS code by entering the following line to the console:
 
@@ -28,7 +28,7 @@ console.log("Hello, World!");
 
 which should output something similar to what's shown below:
 
-![](../_media/console-log.png "Console Log - Hello, World!")
+![](../../_media/console-log.png "Console Log - Hello, World!")
 
 Now, let's look into what just happened. You just instructed your browser to print "Hello, World!" by placing this text inside the parenthesis for the function `console.log`. As its name suggests, it logs to the console whatever you want it to.
 
@@ -47,7 +47,7 @@ To try this out, enter the following in the console:
 alert("Hello, World!);
 ```
 
-![](../_media/console-alert.png "Alert - Hello, World!")
+![](../../_media/console-alert.png "Alert - Hello, World!")
 
 ## Exercises
 

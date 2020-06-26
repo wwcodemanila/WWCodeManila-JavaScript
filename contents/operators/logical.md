@@ -1,12 +1,12 @@
 ## Overview
 
-We'll discuss the three logical operators in JavaScript, which are detailed in the table below. These are the not (`!`), and (`&&`), and or (`||`) operators. These are commonly used when working with boolean values.
+We'll discuss the three logical operators in JavaScript, which are detailed in the table below. These are the not (`!`), and (`&&`), and or (`||`) operators. These are commonly used when working with [Boolean](contents/data_types/primitives?id=booleans) values.
 
-![](../_media/logical-operators.png "Logical Operators")
+![](../../_media/logical-operators.png "Logical Operators")
 
 To better understand how these operators work, let's dive in to some exercises instead.
 
-### Exercises
+## Exercises
 
 1. Declare a variable called `isRed` and set its value to `true`.
 2. Log to the console the result of `!isRed`. `!` is the not operator.
