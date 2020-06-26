@@ -14,10 +14,15 @@
   - ["Hello, World!" Your First JS Code](contents/basics/hello_world.md)
   - [JavaScript Code Structure](contents/basics/js_structure.md)
 
-- Data Types and Operators
+- Data Types
   - [Intro to Data Types and Variables](contents/data_types/overview_and_variables.md)
   - [Data Types: Primitive Values](contents/data_types/primitives.md)
   - [Data Types: Objects](contents/data_types/objects.md)
+
+- Operators
+  - [Logical Operators](contents/operators/logical.md)
+  - [Arithmetic Operators](contents/operators/arithmetic.md)
+  - [Comparison Operators](contents/operators/comparison.md)
 
 - Resources
   - [References](resources/references.md)
