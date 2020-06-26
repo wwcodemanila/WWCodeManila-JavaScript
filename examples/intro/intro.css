@@ -1,0 +1,18 @@
+body {
+  margin: 50px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+button {
+  padding: 10px;
+  background-color: #db1c25;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+#discounted-price {
+  line-height: 1.5;
+}
