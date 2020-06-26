@@ -35,7 +35,7 @@ Also, multi-word variable names are usually written in `camelCase` where the nex
 
 > When declaring variable names, we usually try to be as descriptive as possible to make our code readable.
 
-#### Exercises
+### Exercises
 
 Test out different variable names to check whether they are valid variable names or not.
 

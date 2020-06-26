@@ -251,3 +251,29 @@ console.log(0/0);
 
 > Note that you shouldn't always use numbers just because you're trying to represent data that is numeric. For example, when storing phone numbers, credit card numbers, and ID numbers, it might be better to just use strings!
 
+
+## BigInts
+
+We mentioned previously about how dealing with large numbers is not always safe.
+
+
+
+## Strings
+
+
+
+## Symbols
+
+Symbols in JavaScript are the last primitive values we'll take on. As a general description, **symbols** are used to create **unique identifiers** for objects. However, since symbols are closely tied to the objects data type, we'll put off the discussion for this one later on when we discuss objects.
+
+## Wrap Up
+
+There are **7 primitive values** in JavaScript, one of which (`null`) is a special case.
+1. Undefined - used for unassigned values (`undefined`)
+2. Null - used for intentionally missing values (`null`)
+3. Booleans - used for logic (`true` or `false`)
+4. Numbers - used for integers and floating point numbers
+5. BigInts - used for integers of arbitrary length and precision
+6. Strings - used for textual data (enclosed in `'` or `"`)
+7. Symbols - used for unique identifiers for objects
+
