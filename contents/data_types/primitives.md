@@ -161,7 +161,7 @@ console.log(0.1 + 0.2);
 
 Because of this, we just need to be a bit more careful when dealing with large numbers and calculations. This is not unique in JavaScript. If you'd like to explore this in more detail, feel free to read [What Every Programmer Should Know About Floating-Point Arithmetic](https://floating-point-gui.de/).
 
-To add to the discussion, you can also use `Number.isSafeInteger()` and pass in your integer to check if it's within the safe range. If it returns false, it means that JavaScript will treat it as an **approximation** of the value (closest number it knows about). You can also check `Number.MAX_SAFE_INTEGER` and `Number.MIN_SAFE_INTEGER`.
+To add to the discussion, you can also use `Number.isSafeInteger()` and pass in your integer to check if it's within the safe range. If it returns false, it means that JavaScript will treat it as an **approximation** of the value (closest number it knows about). You can also check `Number.MAX_SAFE_INTEGER` (2<sup>53</sup> - 1) and `Number.MIN_SAFE_INTEGER`(-(2<sup>53</sup> - 1)).
 
 
 ```
@@ -254,8 +254,27 @@ console.log(0/0);
 
 ## BigInts
 
-We mentioned previously about how dealing with large numbers is not always safe.
+We mentioned previously in Numbers about how dealing with large numbers is not always safe. We were limited by the largest and smallest numbers that JavaScript can reliable represent (`Number.MAX_SAFE_INTEGER` and `Number.MIN_SAFE_INTEGER` respectively) to ensure that our calculations end up sound. With this, JavaScript introduced **BigInts** or **Big Integers** for large integers of arbitrary length.
 
+We can say that this is similar with Numbers because it's also a numeric type in JavaScript, but with arbitrary precision. Now we can perform operations on large integers even beyond the limit set for Numbers by `Number.MAX_SAFE_INTEGER` and `Number.MIN_SAFE_INTEGER`.
+
+To declare a BigInt, we just add an `n` to the end of a number.
+
+### Exercises
+1. Declare a variable called `cash` and set it equal to `9876543321987654321987654321n`.
+2. Log the value of `cash`.
+3. Log to the console the result of passing in `cash` to the `typeof` function.
+4. We can also try converting a `BigInt` to a `Number`. Check the result of `console.log(parseInt(cash))`.
+
+Note that you can also use the same arithmetic operators with BigInt. Let's try out a few exercises.
+
+### Exercises
+1. Explore performing arithmetic operators on two BigInt values. Try out addition, subtraction, multiplication, division, exponentiation, and even modulo (for getting the remainder). `console.log(2n + 1n)` and so on.
+2. Now see what happens when you try to perform an arithmetic operation on a BigInt and a Number. Log to the console the result of running `3n + 5`. How about `4n + 6.5`?
+
+It might be a rare case for you to use BigInts unless you're developing applications that make use of extraordinarily large numbers. In the event that you do find yourself using it, you can always turn to the [MDN Web Docs on BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) online and other guides to help out. It's generally a good idea to be familiar with reading documentation.
+
+> BigInts are currently not supported in Safari/IE as of this writing. It's only supported by Firefox, Chrome, and Edge. To read more about Browser Compatibility of BigInt, check out the same [MDN Web Docs on BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) and scroll down to the section on "Browser compatibility".
 
 
 ## Strings
