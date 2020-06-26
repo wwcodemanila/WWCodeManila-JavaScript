@@ -49,7 +49,7 @@ alert("Hello, World!);
 
 ![](../_media/console-alert.png "Alert - Hello, World!")
 
-## Exercise 1
+## Exercises
 
 1. Try to see what happens when you change the text "Hello, World!".
 
