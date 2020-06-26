@@ -6,7 +6,7 @@ By the way, Women Who Code also has [HTML & CSS Study Groups](https://wwcodemani
 
 ## HTML
 
-The main purpose of HTML or Hypertext Markup Language is to give structure to your content as mentioned in [HTML, CSS, JavaScript: How They Work Together](contents/html_css_js.md). HTML is *markup language* (not a programming language) meaning it gives information about the structure of the text or instructions for how it is to be displayed.
+The main purpose of HTML or Hypertext Markup Language is to give structure to your content as mentioned in [HTML, CSS, JavaScript: How They Work Together](contents/web/html_css_js.md). HTML is *markup language* (not a programming language) meaning it gives information about the structure of the text or instructions for how it is to be displayed.
 
 When writing in HTML, you **define elements** in the form of **tags**. Some examples of these tags are `<head>, <body>, <title>, <link>, <meta>, <nav>, <section>, <div>, <p>, <span>, <h1>, <a>, <form>, <table>, <script>, <ul>, <li>`. These tags are case-insensitive which means the tag `<div>` is the same with the tags `<DIV>`, `<Div>`, and its other variations. However, it is common to use the lowercase version.
 
@@ -16,7 +16,7 @@ HTML elements can have **attributes** declared on the opening tag. Attributes he
 
 The typical HTML syntax is shown below: 
 
-![](../_media/html-syntax.png "HTML Syntax")
+![](../../_media/html-syntax.png "HTML Syntax")
 
 In this example, we are defining that the content "This is cool!" is a **paragraph** by enclosing it in the **p** tag. The entire `<p class="awesome">This is cool!</p>` is an **element** composed of **p opening and closing tags** with the text "This is cool!". 
 
@@ -36,7 +36,7 @@ On top of HTML we can add CSS or Cascading Style Sheets. CSS is a *style languag
 
 When writing code using CSS, we make use of **selectors** and **declarations**. Shown below is a basic CSS example using the selectors and declarations:
 
-![](../_media/css-syntax.png "CSS Syntax")
+![](../../_media/css-syntax.png "CSS Syntax")
 
 **Selectors** "select" the HTML element (or elements) that we want to apply the styles to while declarations tell us the actual styles to apply to the element selected. 
 
@@ -54,7 +54,7 @@ In our example above, we are selecting all the paragraph elements in a web page 
 
 When writing code in CSS, it's usually helpful to use line-breaks and indentations for each declaration. This would greatly improve code readability even though it won't change what is rendered on the page. To improve on our example earlier, we can format it to be written as:
 
-![](../_media/css-clean-code.png "CSS Formatted")
+![](../../_media/css-clean-code.png "CSS Formatted")
 
 For a list of the CSS properties you can use in your declarations, you can refer to [cssreference.io](https://cssreference.io/) and [W3Schools CSS Reference](https://www.w3schools.com/cssref/). To check more advanced selectors, you can visit [W3Schools CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp) and [HTML Dog CSS Selectors](http://htmldog.com/references/css/selectors/).
 
