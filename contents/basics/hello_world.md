@@ -6,7 +6,7 @@ For this tutorial, we will walk you through on the fundamentals of JavaScript as
 
 We begin learning JavaScript with the best-selling introduction to programming: **"Hello, World!"**. This is usually the first ever exercise when learning a new programming language. This exercise simply lets you output the words "Hello, World!" in the language you're learning.
 
-Mentioned earlier in [HTML, CSS, JavaScript: How They Work Together](contents/html_css_js.md) is how JavaScript mostly deals with bringing interaction to our websites. As such, it seems fit that we use a web browser to run our first line of JS code.
+Mentioned earlier in [HTML, CSS, JavaScript: How They Work Together](contents/web/html_css_js.md) is how JavaScript mostly deals with bringing interaction to our websites. As such, it seems fit that we use a web browser to run our first line of JS code.
 
 ### Console
 
