@@ -6,7 +6,7 @@ By the way, Women Who Code also has [HTML & CSS Study Groups](https://wwcodemani
 
 ## HTML
 
-The main purpose of HTML or Hypertext Markup Language is to give structure to your content as mentioned in [HTML, CSS, JavaScript: How They Work Together](contents/html_css_js.md). HTML is *markup language* (not a programming language) meaning it gives information about the structure of the text or instructions for how it is to be displayed.
+The main purpose of HTML or Hypertext Markup Language is to give structure to your content as mentioned in [HTML, CSS, JavaScript: How They Work Together](contents/web/html_css_js.md). HTML is *markup language* (not a programming language) meaning it gives information about the structure of the text or instructions for how it is to be displayed.
 
 When writing in HTML, you **define elements** in the form of **tags**. Some examples of these tags are `<head>, <body>, <title>, <link>, <meta>, <nav>, <section>, <div>, <p>, <span>, <h1>, <a>, <form>, <table>, <script>, <ul>, <li>`. These tags are case-insensitive which means the tag `<div>` is the same with the tags `<DIV>`, `<Div>`, and its other variations. However, it is common to use the lowercase version.
 
