@@ -1,6 +1,6 @@
 ## Overview
 
-In this section, we will be learning about variables and the basic data types in JavaScript.
+In this section, we will be learning about variables and the basic data types in JavaScript. We will also discover some of the commonly used operators.
 
 ## Data Types
 
