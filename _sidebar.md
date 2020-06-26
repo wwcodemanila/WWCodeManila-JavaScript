@@ -15,7 +15,9 @@
   - [JavaScript Code Structure](contents/basics/js_structure.md)
 
 - Data Types and Operators
-  - [Data Types & Operators](contents/data_types_operators.md)
+  - [Intro to Data Types and Variables](contents/data_types/overview_and_variables.md)
+  - [Data Types: Primitive Values](contents/data_types/primitives.md)
+  - [Data Types: Objects](contents/data_types/objects.md)
 
 - Resources
   - [References](resources/references.md)
