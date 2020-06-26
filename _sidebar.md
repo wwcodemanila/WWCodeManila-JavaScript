@@ -6,8 +6,16 @@
   - [About WWCode Manila](wwcodemanila/about.md)
   - [Study Groups](wwcodemanila/study_groups.md)
 
-- Basic Concepts
-  - [Web Fundamentals](contents/web_fundamentals.md)
-  - [JavaScript Basics](contents/javascript_basics.md)
+- Web Fundamental Concepts
+  - [HTML, CSS, JavaScript: How They Work Together](contents/html_css_js.md)
+  - [A Recap of HTML and CSS](contents/html_css_recap.md)
+
+- JavaScript Basics
+  - ["Hello, World!" Your First JS Code](contents/hello_world.md)
+  - [JavaScript Code Structure](contents/js_structure.md)
+
+- Data Types and Operators
+  - [Data Types & Operators](contents/data_types_operators.md)
+
 - Resources
   - [References](resources/references.md)

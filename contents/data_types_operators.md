@@ -344,8 +344,3 @@ console.log(0/0);
 
 > Note that you shouldn't always use numbers just because you're trying to represent data that is numeric. For example, when storing phone numbers, credit card numbers, and ID numbers, it might be better to just use strings!
 
-
-
-
-
-
