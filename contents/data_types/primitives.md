@@ -339,3 +339,4 @@ There are **7 primitive values** in JavaScript, one of which (`null`) is a speci
 6. Strings - used for textual data (enclosed in `'` or `"`)
 7. Symbols - used for unique identifiers for objects
 
+We've covered 7 out of the 9 data types so far in JavaScript. The remaining 2 are Objects and Functions.
